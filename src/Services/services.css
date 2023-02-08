@@ -1,0 +1,29 @@
+.service__item{
+	padding: 20px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	column-gap: 11px;
+	cursor: pointer;
+	height:100%;
+}
+
+.service__item span i{
+	font-size: 36px;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 10px;
+	border-radius: 50px;
+	font-weight: 400;
+}
+
+.service__item h3 {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.service__item p{
+	font-size: 16px;
+	margin-top: 5px;
+	color: #1f1e1e;
+}

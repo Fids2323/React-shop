@@ -5,6 +5,7 @@ import mainImg from "../../assets/images/hero-img.png";
 import "./home.css";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
+import Services from "../../Services/services";
 
 const Home = () => {
 	const currentYear = new Date().getFullYear();
@@ -30,6 +31,7 @@ const Home = () => {
 					</Row>
 				</Container>
 			</section>
+			<Services />
 		</Helmet>
 	);
 };
