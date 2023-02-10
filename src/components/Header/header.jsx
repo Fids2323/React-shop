@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import "./header.css";
 import {NavLink} from "react-router-dom";
 import userIcon from "../../assets/images/user-icon.png";

@@ -36,3 +36,28 @@ background: var(--primary-color);
 .main img{
 	pointer-events: none;
 }
+.section__title{
+	color:var(--primary-color);
+	font-weight: 600;
+}
+
+.timer__count{
+	background: var(--primary-color);
+	height: 300px;
+}
+
+.timer__count img{
+	width: 70%;
+	height: 70%;
+	object-fit: contain;
+}
+
+.store__btn{
+	background:#fff;
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+.store__btn a:hover{
+	color: var(--primary-color);
+}
