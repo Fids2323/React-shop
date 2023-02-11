@@ -60,3 +60,15 @@ img{
 section{
 	padding: 60px 0px
 }
+
+@media only screen and (max-width: 768px){
+	section {
+		padding: 40px 0;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	.section__title {
+		font-size: 27px;
+	}
+}

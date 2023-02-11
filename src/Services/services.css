@@ -5,7 +5,7 @@
 	align-items: center;
 	column-gap: 11px;
 	cursor: pointer;
-	height:100%;
+	height: 150px;
 }
 
 .service__item span i{
@@ -26,4 +26,38 @@
 	font-size: 16px;
 	margin-top: 5px;
 	color: #1f1e1e;
+}
+
+
+@media only screen and (max-width: 992px){
+
+	.service__item{
+		margin-bottom: 20px;
+		height: 120px;
+	}
+
+	.service__item span i {
+		font-size: 30px;
+		padding: 5px;
+	}
+	.service__item h3 {
+		font-size: 16px;
+	}
+	.service__item{
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.service__item span i {
+		font-size: 25px;
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 576px){
+	.service__item{
+		padding: 20px;
+	}
 }

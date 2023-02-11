@@ -14,7 +14,7 @@ const serviceData = [
 	{
 		icon: "ri-secure-payment-line",
 		title: "Secure Payment",
-		subtitle: "Secure payment on our website.",
+		subtitle: "Secure payment on our website and shop",
 		bg: "#e2f2b2",
 	},
 	{

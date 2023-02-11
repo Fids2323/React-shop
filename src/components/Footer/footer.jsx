@@ -9,7 +9,7 @@ const Footer = () => {
 		<footer className="footer">
 			<Container>
 				<Row>
-					<Col lg="4">
+					<Col lg="4" md="6" className="mb-4">
 						<div className="logo">
 							<div>
 								<h1 className="text-white">Result Shop</h1>
@@ -19,7 +19,7 @@ const Footer = () => {
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia enim ipsum unde excepturi numquam doloremque fuga impedit autem nesciunt ex.
 						</p>
 					</Col>
-					<Col lg="3">
+					<Col lg="3" md="3" className="mb-4">
 						<div className="footer__quick-links">
 							<h4 className="quick__links-title">Top Categories</h4>
 							<ListGroup>
@@ -38,7 +38,7 @@ const Footer = () => {
 							</ListGroup>
 						</div>
 					</Col>
-					<Col lg="2">
+					<Col lg="2" md="3" className="mb-4">
 						<div className="footer__quick-links">
 							<h4 className="quick__links-title">Useful Links</h4>
 							<ListGroup>
@@ -57,25 +57,25 @@ const Footer = () => {
 							</ListGroup>
 						</div>
 					</Col>
-					<Col lg="3">
+					<Col lg="3" md="4">
 						<div className="footer__quick-links">
 							<h4 className="quick__links-title">Contact</h4>
 							<ListGroup className="footer__contact">
 								<ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
 									<span>
-										<i class="ri-map-pin-line"></i>
+										<i className="ri-map-pin-line"></i>
 									</span>
 									<p>Moscow st. Resultativnaya 23</p>
 								</ListGroupItem>
 								<ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
 									<span>
-										<i class="ri-phone-line"></i>
+										<i className="ri-phone-line"></i>
 									</span>
 									<p>+092039023092392</p>
 								</ListGroupItem>
 								<ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
 									<span>
-										<i class="ri-mail-line"></i>
+										<i className="ri-mail-line"></i>
 									</span>
 									<p>ResultShop@gmail.com</p>
 								</ListGroupItem>
