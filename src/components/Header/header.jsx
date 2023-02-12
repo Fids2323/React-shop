@@ -4,11 +4,13 @@ import {NavLink} from "react-router-dom";
 import userIcon from "../../assets/images/user-icon.png";
 import {motion} from "framer-motion";
 import logoImg from "../../assets/images/eco-logo.png";
+import {useSelector} from "react-redux";
 
 import {Container, Row} from "reactstrap";
 
 const Header = () => {
 	const headerRef = useRef(null);
+	const totalQuantity = useSelector((state) => state.cart.totalQuantity);
 	const menuRef = useRef(null);
 
 	const stickyHeaderFunc = () => {
@@ -73,7 +75,7 @@ const Header = () => {
 						<div className="nav__icons">
 							<span className="cart__icon">
 								<i className="ri-shopping-cart-2-line"></i>
-								<span className="quantity">1</span>
+								<span className="quantity">{totalQuantity}</span>
 							</span>
 							<span className="heart__icon">
 								<i className="ri-heart-line"></i>
