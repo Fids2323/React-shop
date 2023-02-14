@@ -16,8 +16,14 @@ const Shop = () => {
 		}
 	};
 
+	const handleSearch = (e) => {
+		const searchText = e.target.value;
+		const searchedProducts = products.filter((product) => product.productName.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()));
+		setProductsData(searchedProducts);
+	};
+
 	return (
-		<Helmet title={Shop}>
+		<Helmet title="Shop">
 			<CommonSection title="Products" />
 
 			<section>
@@ -46,7 +52,7 @@ const Shop = () => {
 						</Col>
 						<Col lg="6" md="6">
 							<div className="search__box">
-								<input type="text" placeholder="Search..." />
+								<input type="text" placeholder="Search..." onChange={handleSearch} />
 								<span>
 									<i className="ri-search-line"></i>
 								</span>
@@ -56,7 +62,7 @@ const Shop = () => {
 				</Container>
 			</section>
 
-			<section>
+			<section className="pt-0">
 				<Container>
 					<Row>{productsData.length === 0 ? <h1>No products are found!</h1> : <ProductList data={productsData} />}</Row>
 				</Container>
