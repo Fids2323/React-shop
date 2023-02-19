@@ -2,7 +2,7 @@ import React from "react";
 import {Route, Routes, Navigate} from "react-router-dom";
 
 import Home from "../pages/Home/home.jsx";
-import Cart from "../pages/cart.jsx";
+import Cart from "../pages/Cart/cart.jsx";
 import SupplyDetails from "../pages/SupplyDetails/supplyDetails.jsx";
 import Shop from "../pages/Shop/shop.jsx";
 import Checkout from "../pages/checkout.jsx";
