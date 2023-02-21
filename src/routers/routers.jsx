@@ -5,9 +5,10 @@ import Home from "../pages/Home/home.jsx";
 import Cart from "../pages/Cart/cart.jsx";
 import SupplyDetails from "../pages/SupplyDetails/supplyDetails.jsx";
 import Shop from "../pages/Shop/shop.jsx";
-import Checkout from "../pages/checkout.jsx";
-import Login from "../pages/login.jsx";
-import SignUp from "../pages/signUp.jsx";
+import Checkout from "../pages/Checkout/checkout.jsx";
+import Login from "../pages/Login/login.jsx";
+import SignUp from "../pages/SignUp/signUp.jsx";
+import ProtectedRoute from "./ProtectedRoute.js";
 
 const Routers = () => {
 	return (
@@ -16,7 +17,14 @@ const Routers = () => {
 				<Route path="shop/:id" element={<SupplyDetails />} />
 				<Route path="shop" element={<Shop />} />
 				<Route path="cart" element={<Cart />} />
-				<Route path="checkout" element={<Checkout />} />
+				<Route
+					path="checkout"
+					element={
+						<ProtectedRoute>
+							<Checkout />
+						</ProtectedRoute>
+					}
+				/>
 				<Route path="login" element={<Login />} />
 				<Route path="signup" element={<SignUp />} />
 				<Route path="home" element={<Home />} />

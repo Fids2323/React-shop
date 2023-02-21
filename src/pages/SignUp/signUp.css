@@ -1,0 +1,4 @@
+.auth__form input[type="file"]{
+	color: #fff;
+	cursor: pointer;
+}
